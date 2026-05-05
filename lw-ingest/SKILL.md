@@ -1,5 +1,5 @@
 ---
-name: wiki-ingest
+name: lw-ingest
 description: Use when a new source document is added to the raw/ folder and needs to be ingested into the LLM Wiki following the standard workflow.
 ---
 
@@ -47,7 +47,7 @@ This skill guides the process of ingesting new source documents (PDFs) from the 
      ```
 6. **Reflect & Improve**: After the ingest is complete, analyze the conversation. 
    - **Update Domain Facts**: If any new general facts about the game (new editions, faction statuses, SKU formats, scale, materials) emerged during the ingest, you MUST update `oim-fakty.md` immediately.
-   - **Update Configuration**: Identify if any wiki configuration (`GEMINI.md`, the `wiki-ingest` skill itself, or templates) can be updated to streamline the process or clarify rules based on this session's experience.
+   - **Update Configuration**: Identify if any wiki configuration (`GEMINI.md`, the `lw-ingest` skill itself, or templates) can be updated to streamline the process or clarify rules based on this session's experience.
 
 A single source may touch 10-15 wiki pages. That is normal.
 
