@@ -20,6 +20,10 @@ This skill guides the process of checking the wiki for structural health, conten
      - Identify important concepts mentioned but lacking their own page.
      - Check for missing cross-references.
      - Identify data gaps that could be filled with a web search (if appropriate).
+   - **Fact Checking**:
+     - Read the sources cited in the files being linted.
+     - Validate that the claims made in the file are backed by the cited sources.
+     - Report any contradictions or unsupported claims.
    - **Convention Compliance**:
      - Verify that files follow the folder structure defined in `GEMINI.md`.
      - Check that files adhere to naming conventions (e.g., full faction names, RON abbreviation).
