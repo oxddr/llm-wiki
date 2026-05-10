@@ -5,7 +5,9 @@ This repository contains generic skills and documentation for maintaining a pers
 ## Repository Structure
 
 - `lw-ingest/`: Skill for ingesting new sources into a wiki.
+- `lw-lint/`: Skill for health-checking the wiki.
 - `lw-query/`: Skill for answering questions based on wiki content.
+- `lw-init/`: Skill for initializing a new wiki.
 - `docs/`: Generic documentation about the LLM Wiki concept.
 
 Every skill is contained in a directory with a `SKILL.md` file defining its workflow and rules.

@@ -5,7 +5,7 @@ description: Use when a new source document is added to the raw/ folder and need
 
 # Wiki Ingest
 
-This skill guides the process of ingesting new source documents (PDFs) from the `raw/` folder into the Obsidian-based wiki.
+This skill guides the process of ingesting new source documents (PDFs or HTML pages) from the `raw/` folder into the Obsidian-based wiki.
 
 ## Workflow
 
@@ -63,7 +63,9 @@ To ensure consistency, always use the templates provided in the project configur
 - **Proactive Search**: You must search the wiki for existing pages *before* proposing the Ingest Plan to ensure you are aware of existing content.
 - **Index Metadata**: Every entry in the index must have a one-line summary and minimalist tags in brackets `[...]`.
 - **No H1 Titles**: Never add `# Title` at the beginning of a file (Obsidian uses the filename).
-- **Source Naming**: Source information pages must match the raw filename.
+- **Source Naming**: Source information pages must match the raw filename. For webpages (saved as is or scraped), use the scheme: `{website} - {author} (if relevant) - {webpage title}`.
+- **Source Summarization**: For files under `sources`, keep only a 3-10 sentence summary of the content instead of the full extracted text to help decide whether to read the actual source.
+- **Embedded Images**: If the source is an HTML file with embedded base64 images, extract them to the `wiki/resources/` folder and reference them in the content pages using relative paths.
 - **Entity Disambiguation**: Disambiguate entities with common names.
 - **Linking**: Use `[[page-name]]` for all entities.
 - **Sources Section**: Every generated page MUST have a Sources section at the very bottom listing all sources used to generate the page.
