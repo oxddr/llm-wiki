@@ -20,9 +20,9 @@ This skill guides the process of ingesting new source documents (PDFs or HTML pa
    - **Approval**: Wait for user approval of the Ingest Plan before proceeding.
 3. **Decompose (Iterative Review)**:
    - For EACH new or updated file in the approved Ingest Plan:
-     1. Present the FULL proposed content of the file to the user.
-     2. Wait for explicit user approval for that specific file.
-     3. Once approved, write/update the file in the wiki.
+     1. Write/update the file directly in the wiki.
+     2. Inform the user that the file is ready for review in Obsidian.
+     3. Wait for user feedback or approval before proceeding to the next file.
    - This iterative process applies to:
      - Source page in the sources folder (e.g., `wiki/sources/`).
      - Entity pages based on the domain (e.g., specific entity types).
