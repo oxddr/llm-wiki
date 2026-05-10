@@ -42,7 +42,7 @@ check_link() {
     echo "Link verified."
 }
 
-SKILLS=("lw-ingest" "lw-lint" "lw-query")
+SKILLS=("lw-ingest" "lw-lint" "lw-query" "lw-init")
 
 for skill in "${SKILLS[@]}"; do
     check_link "$TEMP_DIR/.gemini/skills/$skill" "$LLM_WIKI_DIR/$skill"
